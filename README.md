@@ -11,6 +11,11 @@ api-uuid
 ```
 
 ```sh
+docker build -t api-uuid .; \
+docker run --rm -it -p 8082:8082 -e PORT=8082 api-uuid
+```
+
+```sh
 > $ curl -i http://localhost:8080/
 HTTP/1.1 200 OK
 Date: Wed, 06 May 2020 20:15:24 GMT
